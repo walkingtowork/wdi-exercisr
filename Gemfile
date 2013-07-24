@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+  source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
@@ -25,7 +25,7 @@ gem 'haml-rails'
 
 gem 'jquery-rails'
 
-gem 'zurb-foundation', '~> 2.2'
+# gem 'zurb-foundation', '~> 2.2'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

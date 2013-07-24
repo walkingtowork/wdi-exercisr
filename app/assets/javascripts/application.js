@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
-//= require_tree .
+//= require zepto
+//= require custom.modernizr
+//= require foundation.min
+// = require_tree .

@@ -1,0 +1,23 @@
+%table
+  %tr
+    %th Email
+    %th Exercise
+    %th
+    %th
+    %th
+    %th
+
+  - @users.each do |user|
+    %tr
+      %td= user.email
+      %td
+        %ul
+          - user.exercises.each do |exercise|
+            %li= exercise.activity
+      %td
+        %ul
+          - user.exercises.each do |exercise|
+            %li= exercise.completed
+      %td= link_to 'Show', user
+      %td= link_to 'Edit', edit_user_path(user)
+      %td= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }

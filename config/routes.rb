@@ -1,4 +1,7 @@
 WdiExercisr::Application.routes.draw do
+  resources :exercises
+
+
   root :to => 'users#index'
   resources :user_sessions
   resources :users

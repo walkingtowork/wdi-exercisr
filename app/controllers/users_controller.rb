@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @exercises = Exercise.all
 
     respond_to do |format|
       format.html # index.html.erb

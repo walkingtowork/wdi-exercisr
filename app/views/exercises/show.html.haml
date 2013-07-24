@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Activity:
+  = @exercise.activity
+%p
+  %b Value:
+  = @exercise.value
+%p
+  %b Units:
+  = @exercise.units
+%p
+  %b Completed:
+  = @exercise.completed
+
+= link_to 'Edit', edit_exercise_path(@exercise)
+\|
+= link_to 'Back', exercises_path

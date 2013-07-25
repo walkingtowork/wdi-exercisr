@@ -1,0 +1,5 @@
+var exercise_table = $("#exercise_table");
+
+$('#new_exercise').foundation('reveal', 'close');
+
+exercise_table.empty().append("<%= j render 'exercise_table' %>");

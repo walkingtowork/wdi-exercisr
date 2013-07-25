@@ -2,7 +2,7 @@ class ExercisesController < ApplicationController
   # GET /exercises
   # GET /exercises.json
   def index
-    @exercises = Exercise.all
+    @users = User.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -28,7 +28,7 @@ class ExercisesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @exercise }
+      format.js
     end
   end
 
@@ -45,10 +45,10 @@ class ExercisesController < ApplicationController
     respond_to do |format|
       if @exercise.save
         format.html { redirect_to @exercise, notice: 'Exercise was successfully created.' }
-        format.json { render json: @exercise, status: :created, location: @exercise }
+        format.js
       else
         format.html { render action: "new" }
-        format.json { render json: @exercise.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
